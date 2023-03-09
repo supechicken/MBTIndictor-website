@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400&display=swap');
+@import url('/dark_mode.css');
+
+html, body, .holder {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+.holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inline-div > * {
+  display: inline-block;
+  margin: 0 13px 0 13px;
+}
+
+.options {
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  font-size: 1.5rem;
+  border: 1.5px solid var(--txt-color);
+  border-radius: 10px;
+  background-color: transparent;
+
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.options:hover {
+  transform: scale(1.15);
+}
+
+.question {
+  font-size: 2.5rem;
+}
+
+.show {
+  visibility: visible;
+  animation: fadeIn ease .6s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .2s, opacity .2s linear;
+}
+
+.header {
+  font-size: 2.6rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--txt-color);
+}
+
+.ad {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
