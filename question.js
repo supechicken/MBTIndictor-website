@@ -53,6 +53,6 @@ function show_question(question, answers) {
   console.log('Result:', result);
 
   setTimeout(() => {
-    location.href = `/result.html?result=${result.join('')}`
+    location.href = `result.html?result=${result.join('')}`
   }, 200);
 })();
